@@ -72,6 +72,8 @@ class AmazonS3Storage(ApacheLibcloudStorage):
         +--------------------+-------------------------------+
         | ``ap-northeast-1`` | Asia Pacific (Tokyo)          |
         +--------------------+-------------------------------+
+        | ``sa-east-1``      | South America (Sao Paulo)     |
+        +--------------------+-------------------------------+
 
         Defaults to ``us-east-1``.
 
@@ -112,6 +114,7 @@ class AmazonS3Storage(ApacheLibcloudStorage):
         'us-east-1': 'S3',
         'us-west-1': 'S3_US_WEST',
         'us-west-2': 'S3_US_WEST_OREGON',
+        'sa-east-1': 'S3_SA_EAST',
     }
 
     def __init__(self, access_key_id, secret_access_key, bucket,
